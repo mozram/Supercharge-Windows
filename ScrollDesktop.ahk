@@ -9,6 +9,10 @@ WheelDown::SendInput {LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}  ; switch
 WheelUp::SendInput {LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}  ; switch to previous virtual desktop
 WheelDown::SendInput {LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}  ; switch to next virtual desktop
 
+#If MouseIsOverClass("Shell_SecondaryTrayWnd")
+WheelUp::SendInput {LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}  ; switch to previous virtual desktop
+WheelDown::SendInput {LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}  ; switch to next virtual desktop
+
 MouseIsOverClass(sought){
 MouseGetPos,,,WinID
 WinGetClass, WinClass, ahk_id %WinID%
