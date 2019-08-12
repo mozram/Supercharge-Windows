@@ -1,2 +1,0 @@
-start autohotkey ScrollDesktop.ahk
-exit
