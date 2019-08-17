@@ -18,15 +18,15 @@ if (CornerTopLeft and MouseIsOverClass("Shell_TrayWnd")) ; Only run hotcorner is
 	Send, #{Tab}
 	Sleep, 3000
 }
-else if (CornerTopRight and MouseIsOverClass("Shell_TrayWnd"))
+else if (CornerTopRight)
 {
 	Sleep, 3000
 }
-else if (CornerBottomLeft and MouseIsOverClass("Shell_TrayWnd"))
+else if (CornerBottomLeft)
 {
 	Sleep, 3000
 }
-else if (CornerBottomRight and MouseIsOverClass("Shell_TrayWnd"))
+else if (CornerBottomRight)
 {
 	Sleep, 3000
 }
