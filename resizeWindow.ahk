@@ -12,9 +12,9 @@ Loop
 	}
 return
 
-; CTRL + Win simulate Alt+Space, m to enter move mode
-LCtrl & LWin::
+; LWin + LAlt simulate Alt+Space, m to enter move mode
+LWin & LAlt::
 Send {AltDown}+{Space}
-Sleep 50
+Sleep 100
 Send m
 return
